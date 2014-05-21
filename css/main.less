@@ -1,0 +1,94 @@
+#wrapper{
+  max-width: 93%;
+  margin: 0 auto;
+
+  overflow-x: hidden;
+  
+  padding-top: 20px;
+
+  @media(max-width: @screen-sm-max){
+    max-width: 100%;
+    padding-top: 0;
+  }
+  
+  @media(max-width: @screen-xs-max){
+    padding-top: 50px;
+  }
+  
+  .navbar{
+    @media(max-width: @screen-xs-max){
+      .ease-left;
+      width: 100%;
+      &.active{
+        left: @sidebar-width;
+      }
+      
+      .navbar-toggle{
+        border: none;
+        &:hover, &:focus{
+          background: none;
+        }
+      }
+    }
+  }
+  .sidebar{
+    width: @sidebar-width;
+    height: 100%;
+    min-height: @desktop-min-height;
+
+    float: left;
+    position: absolute;
+
+    top: 20px;
+    left: auto;
+    z-index: 2;
+
+    background: @sidebar-bg-color;
+    
+    .ease-left;
+    
+    @media(max-width: @screen-sm-max){
+      top: 0;
+    }
+
+    @media(max-width: @screen-xs-max){
+
+      left: -@sidebar-width;
+      position: fixed;
+      min-height: @mobile-min-height;
+      float: none;
+      .shadow(inset -5px 0 15px rgba(0,0,0,0.5));
+      
+      &.active{
+        left: 0;
+      }
+    }
+
+  }
+
+  .body{
+    width: auto;
+    min-height: @desktop-min-height;
+    position: relative;
+    margin-left: 250px;
+
+    padding: 20px;
+
+    background: @body-bg-color;
+
+    left: 0;
+
+    @media(max-width: @screen-xs-max){
+      width: 100%;
+      min-height: calc(~"100% -"@navbar-height);
+      float: none;
+      margin-left: 0;
+      padding-top: 50px;
+      .ease-left
+      &.active{
+        left: @sidebar-width;
+      }
+    }
+  }
+
+}
