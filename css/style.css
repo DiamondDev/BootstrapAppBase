@@ -1,7 +1,7 @@
 .ease-left {
   transition: left 0.5s;
-  transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
 }
 #wrapper {
   max-width: 93%;
@@ -23,8 +23,8 @@
 @media (max-width: 767px) {
   #wrapper .navbar {
     transition: left 0.5s;
-    transition-timing-function: ease;
-    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
     width: 100%;
   }
   #wrapper .navbar.active {
@@ -49,8 +49,8 @@
   z-index: 2;
   background: #ff0000;
   transition: left 0.5s;
-  transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
 }
 @media (max-width: 991px) {
   #wrapper .sidebar {
@@ -59,16 +59,13 @@
 }
 @media (max-width: 767px) {
   #wrapper .sidebar {
-    left: -250px;
+    z-index: -1;
     position: fixed;
     min-height: 100px;
     float: none;
     -moz-box-shadow: inset -5px 0 15px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: inset -5px 0 15px rgba(0, 0, 0, 0.5);
     box-shadow: inset -5px 0 15px rgba(0, 0, 0, 0.5);
-  }
-  #wrapper .sidebar.active {
-    left: 0;
   }
 }
 #wrapper .body {
@@ -86,9 +83,11 @@
     min-height: calc(100% - 50px);
     float: none;
     margin-left: 0;
-    padding-top: 50px;
+    transition: left 0.5s;
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
   }
-  .ease-left #wrapper .body.active {
+  #wrapper .body.active {
     left: 250px;
   }
 }

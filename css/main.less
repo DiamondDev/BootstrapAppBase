@@ -53,15 +53,12 @@
 
     @media(max-width: @screen-xs-max){
 
-      left: -@sidebar-width;
+      z-index: -1;
       position: fixed;
       min-height: @mobile-min-height;
       float: none;
       .shadow(inset -5px 0 15px rgba(0,0,0,0.5));
       
-      &.active{
-        left: 0;
-      }
     }
 
   }
@@ -83,8 +80,7 @@
       min-height: calc(~"100% -"@navbar-height);
       float: none;
       margin-left: 0;
-      padding-top: 50px;
-      .ease-left
+      .ease-left;
       &.active{
         left: @sidebar-width;
       }
