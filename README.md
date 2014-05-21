@@ -1,6 +1,6 @@
 BootstrapAppBase
 =======
-Bootstrap responsive web app template.
+Bootstrap responsive web app basetemplate.
 
 [Demo](http://diamonddev.com/demo/BootstrapAppBase/)
 
