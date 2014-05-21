@@ -14,6 +14,9 @@ This template is a starter help for responsive web apps, with a few basic compon
 
 It should serve as a base for easy responsive Web Apps
 
+###What should become out of it
+The goal of it is to create a collection of basic elements and behaviours for responsive web apps with a focus on mobile.
+
 ###Install
  Since all Vendors (jQuery, Bootstrap) are linked via bower (http://bower.io/), you need to install bower and install all vendors with it:
 
