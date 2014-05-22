@@ -22,5 +22,5 @@ The goal of it is to create a collection of basic elements and behaviours for re
 
  	$ bower install
 
- ###Contribute
+###Contribute
  Together, we can do better... So feel free to contribute!
