@@ -3,6 +3,7 @@ BootstrapAppBase
 Bootstrap responsive web app basetemplate.
 
 [Demo](http://diamonddev.com/demo/BootstrapAppBase/)
+[Demo 2](http://diamonddev.com/demo/Cashpoint/)
 
 
 ###What is this?
